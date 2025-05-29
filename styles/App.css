@@ -1,0 +1,277 @@
+:root{
+    --font-size-normal: 22px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --font-color: #050301;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+}
+
+
+.layout{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    min-height: 100dvh; 
+    background-color: #f1f2f5;
+}
+
+.left {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+  
+.right {
+    padding: 28px;
+}
+
+.headWrapper{
+    background-color: white;
+    min-height: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    background-color: #0e374e;
+    color: white;
+    padding: 32px 24px;
+    h1{
+        text-align: center;
+    }
+}
+
+.subInformation{
+    display: flex;
+    gap: 12px;
+    font-size: 0.9rem;
+}
+
+main{
+    padding: 36px;
+    place-items: center;
+}
+
+.wrapperMain{
+    width: 100%;
+}
+
+.hrLine{
+    color: #0e3b5b;
+    font-size: 1.12rem;
+    font-weight: bold;
+    background-color: #eef1f3;
+    text-align: center;
+    padding: 4px 0;
+    
+}
+
+.schoolsContent{
+    display: grid;
+    gap: 18px;
+    padding: 12px;
+    margin-bottom: 18px;
+}
+
+
+.schoolContent{
+    display: flex;
+    gap: 4px;
+}
+
+.dateAndLocation{
+    flex: 0 0 180px;
+}
+
+.studyInfo p:last-child{
+    margin-top: 6px;
+}
+
+
+
+.templateLoader{
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    form{
+        display: grid;
+        gap: 16px;
+    }
+    h1{
+        margin-bottom: 24px;
+    }
+
+}
+
+.addSchoolForm{
+    padding: 0 24px 24px;
+}
+
+input{
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 36px;
+    border: 1px solid #d1d5db;
+    background-color: #f1f2f5;
+    outline: none
+}
+
+input::placeholder{
+    font-size: 1rem
+}
+
+input:focus{
+    outline: 1px solid #a1a0a0;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    gap: 4px;
+    input{
+        width: 100%
+    }
+}
+
+.educationSection{
+    display: grid;
+    flex-direction: column;
+}
+
+.templateLoader.education{
+    padding: 0;
+    h1{
+        padding: 24px;
+        margin: 0;
+    }
+}
+
+
+.school{
+    border: none;
+    border-top: 5px solid #f3f4f6;
+    text-align: left;
+    color: var(--font-color);
+    font-size: var(--font-size-normal);
+    font-weight: 600;
+    padding: 18px 14px 18px 24px;
+    background-color: white;
+    cursor: pointer;
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.educateBtn, .saveBtn, .deleteBtn{
+    background-color: transparent;
+    padding: 12px 24px;
+    border: 5px solid #f3f4f6;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.wrapperBtn:has(.saveBtn){
+    border: none;
+    justify-content: space-between;
+}
+
+.wrapperBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-top: 5px solid #f3f4f6;
+}
+
+
+
+@media (max-width: 768px){
+    .layout{
+        display: block;
+    }
+
+
+
+    .headWrapper{
+        background-color: white;
+        min-height: 500px;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        background-color: #0e374e;
+        color: white;
+        padding: 24px 24px;
+        h1{
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 0.5rem;
+        }
+        
+    }
+    
+    main{
+        padding: 12px;
+        place-items: center;
+    }
+    
+    .wrapperMain{
+        width: 100%;
+    }
+    
+    .hrLine{
+        color: #0e3b5b;
+        font-size: 0.8rem;
+        font-weight: bold;
+        background-color: #eef1f3;
+        text-align: center;
+        padding: 4px 0;
+        
+    }
+    
+    .schoolsContent{
+        display: grid;
+        gap: 18px;
+        padding: 12px;
+        margin-bottom: 18px;
+        font-size: 0.5rem;
+    }
+    
+    .schoolContent{
+        display: flex;
+        gap: 8px;
+    }
+    
+    .dateAndLocation{
+        flex: 0 0 85px;
+    }
+    
+    .studyInfo p:last-child{
+        margin-top: 6px;
+    }
+    
+}
