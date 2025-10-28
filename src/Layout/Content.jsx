@@ -73,24 +73,3 @@ export default function Content({
         </div>
     )
 }
-
-{/* <div className="schoolContent">
-    <div className="dateAndLocation">
-        <p>08/2020 - present</p>
-        <p>New York city, US</p>
-    </div>
-    <div className="studyInfo">
-        <p><strong>London City University</strong></p>
-        <p>bachelors in economics</p>
-    </div>
-    </div>
-    <div className="schoolContent">
-    <div className="dateAndLocation">
-        <p>08/2020 - present</p>
-        <p>New York city, US</p>
-    </div>
-    <div className="studyInfo">
-        <p><strong>London City University</strong></p>
-        <p>bachelors in economics</p>
-    </div>
-</div> */}
